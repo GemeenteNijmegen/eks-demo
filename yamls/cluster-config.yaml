@@ -1,0 +1,31 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+
+metadata:
+  name: cluster
+  region: eu-central-1
+
+autoModeConfig:
+  enabled: true
+  nodePools: []
+
+vpc:
+  id: vpc-063bcd43071ec38a6
+  subnets:
+    private:
+      eu-central-1a: { id: subnet-0296f5305c5802e99 }
+      eu-central-1b: { id: subnet-00a8331fb89a4b278 }
+      eu-central-1c: { id: subnet-0403b8c300985f648 }
+    public:
+      eu-central-1a: { id: subnet-0b43cb19a5c258000 }
+      eu-central-1b: { id: subnet-0a47c4fdd76db1b79 }
+      eu-central-1c: { id: subnet-0c4af161418c30173 }
+
+# nodeGroups:
+#   - name: ng-1
+#     instanceType: t3.medium
+#     desiredCapacity: 1
+#     volumeSize: 20
+#     privateNetworking: true
+#     ssh:
+#       allow: false
