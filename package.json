@@ -48,9 +48,12 @@
     "typescript": "^5.8.3"
   },
   "dependencies": {
+    "@aws-cdk/lambda-layer-kubectl-v32": "^2.1.0",
     "@gemeentenijmegen/aws-constructs": "^0.0.37",
+    "@types/js-yaml": "^4.0.9",
     "aws-cdk-lib": "^2.1.0",
-    "constructs": "^10.0.5"
+    "constructs": "^10.0.5",
+    "js-yaml": "^4.1.0"
   },
   "license": "EUPL-1.2",
   "publishConfig": {

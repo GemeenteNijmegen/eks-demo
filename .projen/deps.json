@@ -80,7 +80,15 @@
       "type": "build"
     },
     {
+      "name": "@aws-cdk/lambda-layer-kubectl-v32",
+      "type": "runtime"
+    },
+    {
       "name": "@gemeentenijmegen/aws-constructs",
+      "type": "runtime"
+    },
+    {
+      "name": "@types/js-yaml",
       "type": "runtime"
     },
     {
@@ -91,6 +99,10 @@
     {
       "name": "constructs",
       "version": "^10.0.5",
+      "type": "runtime"
+    },
+    {
+      "name": "js-yaml",
       "type": "runtime"
     }
   ],

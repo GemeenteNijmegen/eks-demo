@@ -1,0 +1,12 @@
+apiVersion: storage.k8s.io/v1
+kind: StorageClass
+metadata:
+  name: auto-efs-sc
+  annotations:
+    storageclass.kubernetes.io/is-default-class: "true"
+provisioner: efs.csi.aws.com
+volumeBindingMode: WaitForFirstConsumer
+parameters:
+  provisioningMode: efs-ap
+  fileSystemId: fs-03d740003984f6d49
+  directoryPerms: '700' 
