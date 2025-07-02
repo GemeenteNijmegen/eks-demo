@@ -77,7 +77,7 @@ export class EksClusterStack extends Stack {
       kubectlLayer: new KubectlV32Layer(this, 'kubectl'),
       vpc: vpc.vpc,
       defaultCapacity: 0,
-      serviceIpv4Cidr: '100.64.0.0/16', // Does not seem to do anything after creating the cluster
+      // serviceIpv4Cidr: '100.64.0.0/16', // Does not seem to do anything after creating the cluster
     });
 
     // Setup the group of nodes
